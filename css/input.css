@@ -1,0 +1,91 @@
+.centerpiece {
+    margin: auto;
+	background-color: black; 
+    width: 50%;
+    height: 90%;
+    text-align: center;
+    border: 3px solid rgb(233, 100, 100);
+    padding: 10px;
+  }
+  h1 {
+  color: blacks;
+  font-size: 40px;
+  font-family: 'Nunito', sans-serif;
+  }
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #3B62D1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #7c2fbb;
+  }
+  
+  
+  .image{
+      border-radius: 10px;
+      margin: 70px;
+      border: 1px solid gray; 
+      width:50%;
+      height: 30%;
+      object-fit: cover;
+  }
+  .content{
+    margin: auto;
+    margin-right: 20%;
+    padding-top:80px;
+    width: 50%;
+    height: 90%;
+    text-align: center;
+  }
+  .contents{
+    margin: auto;
+    float: left;
+    margin-left: 20%;
+    padding-top:80px;
+    width: 80%;
+    height: 90%;
+    text-align: center;
+    display: flex
+  }
+  .contents #tables {
+    font-family: 'Nunito', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .contents #tables td, #tables th{
+    border: 1p solid #ddd;
+    padding: 8px;
+  }
+  
+  .contents #tables tr:nth-child(even){
+    background-color: F2F2F2;
+  
+  }
+  .contents tables tr:hover {
+    background: #ddd;
+  }
+  .contents #tables th {
+    padding-top: 12px ;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3B62D1;
+    color: white;
+  }
+  

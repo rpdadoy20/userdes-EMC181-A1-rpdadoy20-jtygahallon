@@ -1,0 +1,292 @@
+.centerpiece {
+    margin: auto;
+	background-color: black; 
+    width: 50%;
+    height: 90%;
+    text-align: center;
+    border: 3px solid rgb(233, 100, 100);
+    padding: 10px;
+  }
+  h1 {
+  color: blacks;
+  font-size: 40px;
+  font-family: 'Nunito', sans-serif;
+  }
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #3B62D1;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #7c2fbb;
+  }
+  
+  
+  .image{
+      border-radius: 10px;
+      margin: 70px;
+      border: 1px solid gray; 
+      width:50%;
+      height: 30%;
+      object-fit: cover;
+  }
+  @import url('https://fonts.googleapis.com/css?family=Nunito:400,700,800,900&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+#sidebar{
+  padding: 20px 0px;
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  background: #3B62D1;
+  /* filter: grayscale(100%); */
+
+
+}
+#sidebar.active{
+  left: 0px;
+}
+#sidebar ul{
+}
+#sidebar ul li{
+  background:  #3B62D1;
+
+  color: rgba(230, 230, 230, 0.9);
+  list-style: none;
+  padding: 13px 10px;
+  border-bottom: 1px solid rgba (100, 100, 100, 0.3);
+  /* filter: grayscale(100%); */
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+
+
+}
+#sidebar a{
+  color: #EEEEF1;
+  text-decoration: none;
+  padding: 0;
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color:white;
+  top: 0; 
+  width: 85%; 
+  height: 60px;
+  float: right;
+  box-shadow: 0px 1px 1px #EEEEF1;
+  display: flex;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: #A6A8B2;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color:white;
+  box-shadow: 0px 1px 1px #EEEEF1;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #494A4F;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #EEEEF1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+.fas{
+  padding-right: 20px;
+}
+
+.navbar #title{
+  display: inline-block;
+  color: #28282B;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin:20px;
+}
+.content{
+  margin: auto;
+  margin-left: 20%;
+  margin-right: 5%;
+  padding-top:80px;
+  width: 75%;
+  height: 90%;
+  text-align: center;
+}
+.contents{
+  margin: auto;
+  float: left;
+  margin-left: 18%;
+  padding-top:30px;
+  width: 80%;
+  height: 10%;
+  text-align: center;
+  display: flex;
+}
+.content #tables {
+  font-family: 'Nunito', sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.content #tables td, #tables th{
+  border: 2px solid #ddd;
+  padding: 8px;
+}
+
+.content #tables tr:nth-child(even){
+  background-color: F2F2F2;
+
+}
+.content tables tr:hover {
+  background: #ddd;
+}
+.content #tables th {
+  padding-top: 12px ;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #3B62D1;
+  color: white;
+  text-transform: uppercase;
+}
+.inputtype{
+  margin: auto;
+  float: left;
+  margin-left: 18%;
+  padding-top:30px;
+  width: 80%;
+  height: 90%;
+  text-align: center;
+  display: flex
+}
+
+
+
+
+.searchBtn{
+  background-color: #f44336; /* Green */
+  border: none;
+  color: white;
+  padding: 4px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+
+.cardSearch {
+  position: relative;
+  display: -ms-flexbox;
+  display:inline-block;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: white;
+  border: 1px solid #EEEEF1;
+  border-radius: 0.25rem;
+  width: 94%;
+  margin-top: 10px;
+  box-shadow: 0px 1px 1px #EEEEF1;
+  padding: 10px;
+  margin-left: 2%;
+  
+}
+.cardTitle {
+  color: #3B62D1;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.cardContent {
+  color: #494A4F;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+input[type=text] {
+  width: 50%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+select{
+  width: 30%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}

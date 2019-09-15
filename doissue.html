@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <title>Asia Pacific College Information System</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" type="text/css" href="css/doissue.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/doissue.js"></script>
+
+    <script src="https://kit.fontawesome.com/5a89f7a224.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="sidebar">
+        <ul>
+            <li><a href="doindex.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="doindex.html"><i class="fas fa-palette"></i> Change Skin</a></li>
+            <li><a href="doindex.html"><i class="fas fa-external-link-alt"></i> APCIS (New)</a></li>
+            <li><a href="doindex.html"><i class="fas fa-school"></i> APCIS Senior High</a></li>
+            <li><a href="doindex.html"><i class="fas fa-user-lock"></i> Data Privacy Policy</a></li>
+            <li><a href="doindex.html"><i class="fas fa-user-friends"></i> Classroom Decorum</a></li>
+        </ul>
+    </div>
+    <div class="navbar">
+        <div id="title">
+            Asia Pacific College Information System
+        </div>
+        <div id="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Raymart Cabiten</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <div class="cardSearch">
+            <div class="cardTitle">
+                Search
+            </div>
+            <input type="text" name="Search">
+            <select name="desc" id="desc">
+                <option>Student Number</option>
+                <option>Name</option>
+            </select>
+
+            <button class="searchBtn">Search</button>
+
+        </div>
+        <div class="cardDetails">
+            <div class="cardTitle">
+                Name
+            </div>
+            <div class="cardContent">
+                Jamie Therese Y. Gahallon
+            </div>
+        </div>
+        <div class="button1" id="peBut">
+            <button onclick="buttonToggle('peBut','pe')">
+                <div class="buttonContent" id="pe">
+                    Violation
+                </div>
+            </button>
+        </div>
+        <div class="button1" id="skirtBut">
+            <button onclick="buttonToggle('skirtBut','skirt')">
+                <div class="buttonContent" id="skirt">
+                    Discipline Conference
+                </div>
+            </button>
+        </div>
+        <div class="button1" id="blazBut">
+            <button onclick="buttonToggle('blazBut','blaz')">
+                <div class="buttonContent" id="blaz">
+                    Parent Conference
+                </div>
+            </button>
+        </div>
+        <div class="cardDetails">
+            <div class="cardTitle">
+                Student Number
+            </div>
+            <div class="cardContent">
+                2015-100193
+            </div>
+        </div>
+        <div class="button1" id="footBut">
+            <button onclick="buttonToggle('footBut','foot')">
+                <div class="buttonContent" id="foot">
+                    Sanctioned
+                </div>
+            </button>
+        </div>
+        <div class="button1" id="denimBut">
+            <button onclick="buttonToggle('denimBut','denim')">
+                <div class="buttonContent" id="denim">
+                    Disclipine Board
+                </div>
+            </button>
+        </div>
+        <div class="button1">
+            <button onclick="clearButtons()">
+                <div class="buttonContent">
+                    Clear
+                </div>
+            </button>
+        </div>
+        <div class="cardDetails">
+            <div class="cardTitle">
+                Course/Strand
+            </div>
+            <div class="cardContent">
+                B.S. in Computer Engineering
+            </div>
+        </div>
+        <div class="cardDetails">
+            <div class="cardTitle">
+                Transcation
+            </div>
+            <div class="cardContent">
+                M1, M2
+            </div>
+        </div>
+
+
+        <div class="cardDetails">
+            <img src="student.jpg" width="40%" class="center">
+        </div>
+        <div class="cardRemarks">
+            <div class="cardTitle">
+                Remarks
+            </div>
+            <textarea rows="20" cols="50">
+
+            </textarea>
+        </div>
+        <div class="navigation">
+            <a href="scan.html">Back</a>
+        </div>
+        <div class="navigation">
+            <button onclick="submit()">
+                Submit
+        </div>
+    </div>
+    <div class="form-popup" id="myForm">
+        <form class="form-container">
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw">
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn cancel" onclick="submit()">Close</button>
+        </form>
+    </div>
+    <div class="form-popup2" id="myForm2">
+        <form class="form-container2">
+            <div class="cardTitle" id="title2">
+                Offense Type
+            </div>
+            <div class="cardContent">
+                <select name="offense" id="offense" onchange="getType()">
+                    <option value="minor">Minor Offense</option>
+                    <option value="major">Major Offense</option>
+                </select>
+            </div>
+            <div class="cardTitle" id="title2">
+                Offense Description
+            </div>
+            <div class="cardContent">
+                <select name="desc" id="desc">
+                    <option>Unauthorized sale or vending</option>
+                    <option>Unauthorized solicition of money or any contribution</option>
+                    <option>Removing, defacing, tearing, mutilating or altering the contents of any official poster
+                    </option>
+                    <option>Violation to the policies, rules, guideliens, and regulations</option>
+                    <option>Not returning school materials or equipemt or bringing out the same without approval
+                    </option>
+                    <option>Playing games in the cafeteria during lunch hours</option>
+                    <option>Misuse or loss of school furniture, equipment or resources</option>
+                    <option>Scandalous display of affection</option>
+                    <option>Violation of the dress code</option>
+                    <option>Littering</option>
+                    <option>Smoking</option>
+                </select>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
